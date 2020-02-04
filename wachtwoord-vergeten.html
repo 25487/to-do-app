@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>To Do List App</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Taurese Usman">
+  </head>
+  <div id="telefoon">
+    <h1> Bekijk in inspect element voor de mobiele versie!</h1>
+  </div>
+    <body>
+      <span style="display:block; height: 25px;"></span>
+      <div id="login">
+          <h1 style="text-transform: uppercase; text-decoration: underline;">Wachtwoord Vergeten</h1>
+      <img src="images/profile.png" class="icon--user" width="75px" height="50px">
+      <span style="display:block; height: 30px;"></span>
+      <form>
+  <label style="padding-right: 4.2em; text-decoration: underline;">Email-Adress:</label>
+        <div class="group">
+          <input name="username" id="username" type="text">
+          <span class="highlight"></span>
+          <span class="bar"></span>
+
+        </div>
+
+  <label style="padding-right: 4.7em; text-decoration: underline;">Wachtwoord:</label>
+        <div class="group">
+          <input name="pass" id="pass" type="text">
+          <span class="highlight"></span>
+          <span class="bar"></span>
+
+        </div>
+        <label style="padding-right: 0.7em; text-decoration: underline;">Herhaal Wachtwoord:</label>
+              <div class="group">
+                <input name="pass" id="pass" type="text">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+
+              </div>
+
+  <button class="button" type="reset" onclick="myFunction()" style="text-decoration: underline;color: #707070;">Nieuw Wachtwoord</button>
+</form>
+  <script>
+  function myFunction(){
+    var user = document.getElementById("username").value;
+    var pass = document.getElementById("pass").value;
+    var pass = document.getElementById("pass").value;
+
+  if(user == "Medewerker1@hotmail.com"){
+              window.location.href="patienten.html"
+
+     }else{
+      alert("Uw Email-Adress is niet bekend");
+      }
+
+
+      if(pass == ""){
+                  alert("Uw heeft geen wachtwoord ingevoerd");
+         }
+
+      }
+
+  </script>
+
+    </div>
+    </body>
+    </html>

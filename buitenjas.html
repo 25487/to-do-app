@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>To Do List App</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Taurese Usman">
+  </head>
+  <style>
+#myProgress {
+  width: 75%;
+  background-color: #ddd;
+
+}
+
+#myBar {
+  padding-left: 1em;
+  width: 5%;
+  height: 30px;
+  background-color: black;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+</style>
+  <body>
+    <div id="telefoon">
+      <h1> Bekijk in inspect element voor de mobiele versie!</h1>
+    </div>
+
+<div>
+
+<a style="padding-left: 4.5em;"  href="help.html"><button class="button3" style="color: #707070;"><h3>Emergency</h3></button></a>
+</div>
+<span style="display: block; margin-top: 3em; margin-left: 5.2em;"></span>
+<span style="display:block; height: 10px;"></span>
+<img src="https://cdn3.iconfinder.com/data/icons/casual-wear-1/100/jacket-512.png
+" width="150px" height="150px" style="margin-left: 6.2em; border: 2px solid grey; border-radius: 10px;">
+<h2 style="display: block; margin-top: 1.7em; margin-left: 4.75em;">Pak uw jas.</h2>
+
+<span style="display:block; height: 10px;"></span>
+<div style="padding-left: 4em;">
+
+
+<div id="myProgress">
+  <div id="myBar">10%</div>
+</div>
+<div style="height: 50px; margin-top: -2.4em;">
+<img onclick="move()" src="https://cdn4.iconfinder.com/data/icons/game-interface-outline/100/objects-17-512.png" width="50px" height="50px" style="float:right; ">
+</div>
+<br>
+
+</div>
+<a href="taken.html"><button class="button" style="text-decoration: underline;color: #707070; ">Terug</button></a>
+<a href="buitensleutels.html"><button class="button" style="text-decoration: underline;color: #707070; float: right;">Volgende</button></a>
+<script>
+var i = 0;
+function move() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myBar");
+    var width = 10;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+        elem.innerHTML = width  + "%";
+      }
+    }
+  }
+}
+</script>
+</body>
+
+    </html>

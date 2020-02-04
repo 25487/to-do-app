@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>To Do List App</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Taurese Usman">
+  </head>
+  <body>
+    <div id="telefoon">
+      <h1> Bekijk in inspect element voor de mobiele versie!</h1>
+    </div>
+    <span style="display:block; height: 25px;"></span>
+    <div id="login">
+        <h1 style="text-transform: uppercase;"> Log In</h1>
+    <img src="images/profile.png" class="icon--user" width="75px" height="50px">
+    <span style="display:block; height: 30px;"></span>
+    <form>
+<label style="padding-right: 2.9em; text-decoration: underline;">Gebruikersnaam:</label>
+      <div class="group">
+        <input name="username" id="username" type="text" required>
+        <span class="highlight"></span>
+        <span class="bar"></span>
+
+      </div>
+
+<label style="padding-right: 4.8em; text-decoration: underline;">Wachtwoord:</label>
+      <div class="group">
+        <input name="pass" id="pass" type="password" required>
+        <span class="highlight"></span>
+        <span class="bar"></span>
+
+      </div>
+<button class="button" type="reset" onclick="myFunction()" style="text-decoration: underline;color: #707070;">Log In</button>
+    </form>
+  </div>
+
+<div class="overig">
+  <span style="display:block; height: 30px;"></span>
+<a href="#" onClick="autoFill(); return true;"><label style="padding-right:  10em;text-decoration: underline;text-align: center;padding-left: 3em;">Remember Me</label></a>
+<span style="display:block; height: 5px;"></span>
+<a href="wachtwoord-vergeten.html"><label style="padding-right:  6.5em;text-decoration: underline;padding-left: 3em;">Wachtwoord Vergeten?</label></a>
+</div>
+
+  <script>
+  function myFunction(){
+    var user = document.getElementById("username").value;
+    var pass = document.getElementById("pass").value;
+
+  if(user == "Medewerker1" && pass == "Wachtwoord"){
+              window.location.href="patienten.html"
+
+     }else{
+      alert("Password is incorrect");
+      }
+  }
+
+  function autoFill() {
+    document.getElementById("username").value = "Medewerker1";
+    document.getElementById("pass").value = "Wachtwoord";
+
+
+
+  }
+  </script>
+
+
+  </body>
+</html>

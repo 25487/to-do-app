@@ -1,0 +1,188 @@
+html{
+   font-family: Arial;
+   color: #707070;
+  }
+
+*{
+  font-family: Arial;
+}
+#telefoon{
+  text-align: center;
+}
+
+#login{
+  text-align: center;
+}
+.icon--user{
+  border: 0.5px solid black;
+  padding: 10px;
+  border-radius:50px;
+}
+
+.icon--users{
+  border: 0.5px solid black;
+  padding: 10px;
+  border-radius:50px;
+  margin-left: 35em;
+}
+p{
+  float: right;
+          padding-right: 35em;
+      margin-top: 2em;
+      border-bottom: 0.1px solid black;
+      height: 2em;
+}
+.overig{
+  text-align: center;
+}
+.button{
+  border: 2.4px solid white;
+  border-radius: 50px;
+        background-color: transparent;
+        font-size: 1.4em;
+        color: #000000;
+        padding: .5em 1.5em;
+        margin-top: 1em;
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        cursor: pointer;
+        grid-gap: 3em;
+}
+
+
+/* Log In */
+form{
+  text-align: center;
+}
+.group 			  {
+  position:relative;
+  margin-bottom:45px;
+}
+input 				{
+  border: none;
+      /* width: 100%; */
+      height: 95%;
+      background: transparent;
+      font-size: 18px;
+      resize: none;
+      border-bottom: 1px solid;
+
+  }
+}
+input:focus{
+   outline:none;
+}
+label 				 {
+  color:#000000;
+  font-size:18px;
+  font-weight:normal;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+.button12{
+  border: 2.3px solid white;
+  border-radius: 50px;
+        background-color: transparent;
+        font-size: 1.2em;
+        color: #000000;
+        padding: .5em 1.5em;
+        margin-top: 1em;
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        cursor: pointer;
+        padding-left: 26em;
+        grid-gap: 3em;
+}
+
+
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+
+html{
+  width: 100%;
+  background-image: url('images/background.png');
+}
+.text{
+  display: none;
+}
+.button{
+  border: 2.3px solid white;
+  border-radius: 50px;
+        background-color: transparent;
+        font-size: 1.2em;
+        color: #000000;
+        padding: .5em 1.5em;
+        margin-top: 1em;
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        cursor: pointer;
+        grid-gap: 3em;
+}
+.button12{
+  border: 2.3px solid white;
+  border-radius: 50px;
+        background-color: transparent;
+        font-size: 1.2em;
+        color: #000000;
+        padding: .5em 1.5em;
+        margin-top: 1em;
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        cursor: pointer;
+
+        grid-gap: 3em;
+}
+.overig{
+text-align: center;
+}
+#telefoon{
+  display: none;
+}
+.icon--users{
+  border: 0.5px solid black;
+  padding: 10px;
+  border-radius:50px;
+  margin-left: 1.5em;
+}
+p{
+  float: right;
+      padding-right: 8em;
+      margin-top: 2em;
+      border-bottom: 0.1px solid black;
+      height: 2em;
+}
+.taak{
+  float: right;
+      padding-right: 8em;
+      margin-top: 1em;
+      border-bottom: 0.1px solid black;
+      height: 2em;
+}
+br{
+  float: right;
+      padding-right: 8em;
+      margin-top: 2em;
+      border-bottom: 0.1px solid black;
+      height: 2em;
+}
+.check{
+  padding: 10px;
+  border-radius:50px;
+  margin-left: 1.5em;
+}
+.button3{
+  border: 2.3px solid grey;
+  border-radius: 50px;
+        background-color: transparent;
+        font-size: 1.2em;
+        color: #000000;
+        padding: .05em 2em;
+        margin-top: 2em;
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        cursor: pointer;
+        grid-gap: 3em;
+        padding-left: 2em;
